@@ -1,11 +1,9 @@
 import React from 'react';
-import styles from './Home.module.css';
-import Button from './../../UI/button/Button.jsx';
-import Navigation from './../../UI/navigation/Navigation.jsx'
-export default function Home() {
+import styles from './Navigation.module.css';
+export default function Navigation() {
   return (
-    <>
-      {/* <div className={styles.header}>
+    <div className={styles.header}>
+      <div className={styles.container}>
         <a href='#' className={styles.logo}></a>
         <div>
           <nav>
@@ -62,15 +60,7 @@ export default function Home() {
           <div className={styles.vk}></div>
           <div className={styles.youtube}></div>
         </div>
-      </div> */}
-      <div className={styles.main}>
-        <span className={styles.main__city}>Калининград</span>
-        <span className={styles.main__title}>Amber Hawks</span>
-        <span className={styles.main__subtext}>Клуб американского футбола</span>
       </div>
-      <div className={styles.main__btn}>
-        <Button name='Записаться на тренироку' />
-      </div>
-    </>
+    </div>
   );
 }
