@@ -6,7 +6,7 @@ export default async function Home() {
       <div className='container'>
         <main>
           <HomePage />
-          <h2>Футбольная команда</h2>
+          
         </main>
       </div>
     </div>

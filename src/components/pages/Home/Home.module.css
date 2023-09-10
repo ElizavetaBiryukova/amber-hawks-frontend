@@ -1,0 +1,45 @@
+.header{
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  content: '';
+  background: url(./../../../assets/icons/logo.svg);
+  width: 80px;
+  height: 76px;
+}
+
+.header__nav{
+  display: flex;
+  gap: 20px;
+}
+
+.header__text{
+  color: white;
+}
+
+.header__icons{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.vk{
+  content: '';
+  background: url(./../../../assets/icons/vk.png);
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.youtube{
+  content: '';
+  background: url(./../../../assets/icons/youtube.png);
+  width: 48px;
+  height: 48px;
+}
