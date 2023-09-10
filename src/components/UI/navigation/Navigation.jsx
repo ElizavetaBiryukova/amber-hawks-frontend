@@ -1,10 +1,12 @@
-import React from 'react';
+import Link from 'next/link';
 import styles from './Navigation.module.css';
+
+
 export default function Navigation() {
   return (
     <div className={styles.header}>
       <div className={styles.container}>
-        <a href='#' className={styles.logo}></a>
+        <Link href='/' className={styles.logo}></Link>
         <div>
           <nav>
             <ul className={styles.header__nav}>
@@ -14,9 +16,9 @@ export default function Navigation() {
                 </a>
               </li>
               <li>
-                <a className={styles.header__text} href='#'>
+                <Link className={styles.header__text} href='/'>
                   Главная
-                </a>
+                </Link>
               </li>
               <li>
                 <a className={styles.header__text} href='#'>
@@ -34,14 +36,9 @@ export default function Navigation() {
                 </a>
               </li>
               <li>
-                <a className={styles.header__text} href='#'>
-                  Тренера
-                </a>
-              </li>
-              <li>
-                <a className={styles.header__text} href='#'>
+                <Link className={styles.header__text} href='/team'>
                   Команда
-                </a>
+                </Link>
               </li>
               <li>
                 <a className={styles.header__text} href='#'>

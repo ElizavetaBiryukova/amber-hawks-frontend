@@ -1,0 +1,7 @@
+.wrapper {
+    background-image: url(./../assets/img/header__img1.png);
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    background-size: 100%;
+}

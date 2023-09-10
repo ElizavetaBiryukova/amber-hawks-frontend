@@ -115,12 +115,10 @@ body {
   font-family: "Montserrat", sans-serif;
   width: 100%;
   margin: 0 auto;
-  background-image: url(./../assets/img/header__img1.png);
   height: 100vh;
   background-size: 100%;
   background-color: black;
 }
-
 
 .container {
   max-width: 1200px;
