@@ -109,8 +109,7 @@ label {
 legend {
   display: block;
 }
-
-.wrapper {
+body{
   font-family: "Montserrat", sans-serif;
   width: 100%;
   margin: 0 auto;
@@ -118,6 +117,7 @@ legend {
   height: 100vh;
   background-size: 100%;
 }
+
 
 .container {
   max-width: 1200px;
