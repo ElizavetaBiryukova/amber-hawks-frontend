@@ -1,8 +1,14 @@
+import HomePage from '@/components/pages/Home/HomePage';
 
-export default function Home() {
-    return (
+export default async function Home() {
+  return (
+    <div className='wrapper'>
+      <div className='container'>
         <main>
-            <h2>Футбольная команда</h2>
+          <HomePage />
+
         </main>
-    )
+      </div>
+    </div>
+  );
 }
