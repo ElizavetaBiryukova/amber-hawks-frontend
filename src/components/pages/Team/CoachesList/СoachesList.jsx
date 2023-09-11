@@ -5,7 +5,7 @@ import CoachesItem from "../CoachesItem/CoachesItem"
 function CoachesList() {
     return (
         <div className={styles.wrapper}>
-            <h2>Тренерский штаб</h2>
+            <h2 className={styles.title}>Тренерский штаб</h2>
             <ul className={styles.list}>
                 {coachesList.map((coach) => (
                     <CoachesItem

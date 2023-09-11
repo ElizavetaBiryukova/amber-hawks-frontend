@@ -11,11 +11,13 @@ function PlayersItem({ player }) {
                 height={245}
             />
             <h3 className={styles.name}>{player.name}</h3>
-            <p>{player.age} года</p>
-            <p>{(player.height).toString().slice(0, 1)} м {(player.height).toString().slice(1, 3)} см</p>
-            <p>{player.position}</p>
-            <p>в команде с {player.date}</p>
-            <p>{player.rank}</p>
+            <div className={styles.info}>
+                <p>{player.age} года</p>
+                <p>{(player.height).toString().slice(0, 1)} м {(player.height).toString().slice(1, 3)} см</p>
+                <p>{player.position}</p>
+                <p>в команде с {player.date}</p>
+                <p>{player.rank}</p>
+            </div>
         </li>
     )
 }

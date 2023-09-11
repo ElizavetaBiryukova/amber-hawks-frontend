@@ -5,12 +5,12 @@ import 'src/app/globals.css'
 const bitter = localFont({
   src: [
     {
-      path: '../assets/fonts/Bitter-SemiBold.woff2',
+      path: '../assets/fonts/Bitter-SemiBold.ttf',
       weight: '600',
       style: 'normal',
     },
     {
-      path: '../assets/fonts/Bitter-Bold.woff2',
+      path: '../assets/fonts/Bitter-Bold.ttf',
       weight: '700',
       style: 'normal',
     },

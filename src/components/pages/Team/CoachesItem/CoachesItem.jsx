@@ -11,7 +11,7 @@ function CoachesItem({ coach }) {
                 height={245}
             />
             <h3 className={styles.name}>{coach.name}</h3>
-            <p>{coach.position}</p>
+            <p className={styles.position}>{coach.position}</p>
         </li>
     )
 }
