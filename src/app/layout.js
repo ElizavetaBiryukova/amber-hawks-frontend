@@ -1,6 +1,39 @@
-import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 import 'src/app/globals.css'
-const inter = Inter({ subsets: ['latin'] })
+
+
+const bitter = localFont({
+  src: [
+    {
+      path: '../assets/fonts/Bitter-SemiBold.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/Bitter-Bold.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-bitter'
+})
+
+const helvetica = localFont({
+  src: [
+    {
+      path: '../assets/fonts/Helvetica-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/Helvetica-Medium.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-helvetica'
+})
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,7 +43,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${bitter.variable} ${helvetica.variable}`}>{children}</body>
     </html>
   )
 }

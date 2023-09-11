@@ -10,24 +10,26 @@
 .main__city {
   font-size: 18px;
   font-weight: 400;
-  line-height: 25px; /* 138.889% */
+  line-height: 25px;
+  /* 138.889% */
 }
 
 .main__title {
   font-size: 150px;
   font-weight: 700;
-  line-height: 120%; /* 256.8px */
+  line-height: 120%;
+  /* 256.8px */
   text-transform: uppercase;
 }
 
 .main__subtext {
   font-size: 40px;
   font-weight: 700;
-  line-height: 120%; /* 48px */
+  line-height: 120%;
+  /* 48px */
 }
 
-.main__btn{
+.main__btn {
   text-align: center;
   margin-top: 50px;
 }
-
