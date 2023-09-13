@@ -75,5 +75,6 @@ export const generatePlayer = () => {
     return player
 }
 
+
 export const coachesList = new Array(6).fill(0).map(generateCoach);
 export const playersList = new Array(10).fill(0).map(generatePlayer);
