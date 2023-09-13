@@ -2,36 +2,20 @@ import localFont from 'next/font/local'
 import 'src/app/globals.css'
 
 
-const bitter = localFont({
+const monsterrat = localFont({
   src: [
     {
-      path: '../assets/fonts/Bitter-SemiBold.ttf',
-      weight: '600',
-      style: 'normal',
-    },
-    {
-      path: '../assets/fonts/Bitter-Bold.ttf',
+      path: '../assets/fonts/Montserrat-Bold.woff2',
       weight: '700',
       style: 'normal',
     },
-  ],
-  variable: '--font-bitter'
-})
-
-const helvetica = localFont({
-  src: [
     {
-      path: '../assets/fonts/Helvetica-Regular.woff2',
+      path: '../assets/fonts/Montserrat-Regular.woff2',
       weight: '400',
       style: 'normal',
     },
-    {
-      path: '../assets/fonts/Helvetica-Medium.woff2',
-      weight: '500',
-      style: 'normal',
-    },
   ],
-  variable: '--font-helvetica'
+  variable: '--font-monsterrat'
 })
 
 
@@ -43,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${bitter.variable} ${helvetica.variable}`}>{children}</body>
+      <body className={`${monsterrat.variable}`}>{children}</body>
     </html>
   )
 }
