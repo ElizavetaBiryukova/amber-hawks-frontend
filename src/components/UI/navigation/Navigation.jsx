@@ -11,44 +11,24 @@ export default function Navigation() {
           <nav>
             <ul className={styles.header__nav}>
               <li>
-                <a className={styles.header__text} href='#'>
-                  События
-                </a>
-              </li>
-              <li>
-                <Link className={styles.header__text} href='/'>
-                  Главная
+                <Link className={styles.header__text} href='/about'>
+                  О федерации
                 </Link>
-              </li>
-              <li>
-                <a className={styles.header__text} href='#'>
-                  О компании
-                </a>
-              </li>
-              <li>
-                <a className={styles.header__text} href='#'>
-                  Услуги
-                </a>
-              </li>
-              <li>
-                <a className={styles.header__text} href='#'>
-                  Турниры
-                </a>
               </li>
               <li>
                 <Link className={styles.header__text} href='/team'>
-                  Команда
+                  Янтарные ястребы
                 </Link>
               </li>
               <li>
                 <a className={styles.header__text} href='#'>
-                  Вакансии
+                  Флаг футбол
                 </a>
               </li>
               <li>
-                <a className={styles.header__text} href='#'>
-                  Контакты
-                </a>
+                <Link className={styles.header__text} href='/kids'>
+                  Детская команда
+                </Link>
               </li>
             </ul>
           </nav>

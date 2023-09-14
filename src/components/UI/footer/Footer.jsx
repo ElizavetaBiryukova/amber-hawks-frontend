@@ -6,19 +6,19 @@ export default function Footer() {
     return (
         <div className={styles.footer}>
             <div className={styles.container}>
-                <div>
+                <div className={styles.contacts}>
                     <div>
                         <div><Link href={'https://yandex.ru/maps/-/CDUUIWmN'}>улица Согласия, 39, Калининград</Link></div>
                         <div><Link href={'tel:+74012346578'}>+7 (4012) 346-578</Link></div>
                         <div><Link href={'mailto:example@email.com'}>example@email.com</Link></div>
                     </div>
-                    <div>
+                    <div className={styles.social}>
                         <div><Link href={'https://vk.com/afkld'}>Вконтакте</Link></div>
                         <div><Link href={'https://www.youtube.com/channel/UCT6OZJVJK7ximMVnvt9wZKw'}>Youtube</Link></div>
                     </div>
                 </div>
                 <nav>
-                    <ul>
+                    <ul className={styles.list}>
                         <li>
                             <a href='#'>
                                 О федерации
@@ -42,9 +42,8 @@ export default function Footer() {
                     </ul>
                 </nav>
 
-                <div>
-                    <div>Мы рады каждому</div>
-                    <Button />
+                <div className={styles.folow}>
+                    <div className={styles.text}>Мы рады каждому</div>
                 </div>
             </div>
         </div>

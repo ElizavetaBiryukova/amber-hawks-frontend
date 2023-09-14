@@ -22,6 +22,7 @@ export default async function Home() {
         <div className={styles.container}>
           <TrainingSchedule />
         </div>
+        <Footer />
       </div>
     </>
   );
