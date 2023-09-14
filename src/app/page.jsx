@@ -1,3 +1,4 @@
+import Footer from '@/components/UI/footer/Footer';
 import styles from './page.module.css'
 import Navigation from '@/components/UI/navigation/Navigation';
 import HomePage from '@/components/pages/Home/HomePage';
