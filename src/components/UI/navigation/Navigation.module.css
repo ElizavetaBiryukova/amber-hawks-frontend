@@ -41,6 +41,7 @@
 
 .vk:hover {
   background-color: var(--dark-orange);
+  transition: all 1s;
 }
 
 .container {

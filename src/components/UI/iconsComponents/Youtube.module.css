@@ -4,4 +4,5 @@
 
 .svg:hover {
   fill: var(--dark-orange);
+  transition: all 1s;
 }
