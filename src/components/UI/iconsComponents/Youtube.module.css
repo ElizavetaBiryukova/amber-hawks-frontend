@@ -1,0 +1,7 @@
+.svg {
+  fill: var(--white);
+}
+
+.svg:hover {
+  fill: var(--dark-orange);
+}
