@@ -23,6 +23,11 @@ export default function Navigation() {
                 </Link>
               </li>
               <li>
+                <Link className={styles.header__text} href='/news'>
+                  Игры
+                </Link>
+              </li>
+              <li>
                 <Link className={styles.header__text} href='/team'>
                   Янтарные ястребы
                 </Link>

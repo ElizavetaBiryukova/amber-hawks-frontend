@@ -27,8 +27,13 @@ export default function Footer() {
                             </Link>
                         </li>
                         <li>
-                            <Link className={styles.header__text} href='/news'>
+                            <Link href='/news'>
                                 Новости и события
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href='/news'>
+                                Игры
                             </Link>
                         </li>
                         <li>
