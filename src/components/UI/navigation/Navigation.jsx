@@ -23,7 +23,7 @@ export default function Navigation() {
                 </Link>
               </li>
               <li>
-                <Link className={styles.header__text} href='/news'>
+                <Link className={styles.header__text} href='/games'>
                   Игры
                 </Link>
               </li>
