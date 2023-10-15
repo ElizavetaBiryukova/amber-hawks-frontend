@@ -12,13 +12,14 @@ export default function NewsCard({ item }) {
         <div className={styles.img}>
           <Image
             fill
+            sizes='100%'
             src={item.img}
             alt='photo'
           />
         </div>
         <h1 className={styles.title}>{item.title}</h1>
         <p className={styles.text}>
-          {item.text}
+          {item.text.length > 100 ? `${item.text.slice(0, 100)}...` : item.text}
         </p>
       </div>
     </>
