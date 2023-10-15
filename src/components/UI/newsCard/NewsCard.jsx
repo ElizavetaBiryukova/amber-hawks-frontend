@@ -10,11 +10,10 @@ export default function NewsCard({ item }) {
       <div className={styles.card}>
         <span className={styles.data}>{item.data}</span>
         <div className={styles.img}>
-          <Image 
-          width={290}
-          height={290}
-          src={item.img}
-          alt='photo'
+          <Image
+            fill
+            src={item.img}
+            alt='photo'
           />
         </div>
         <h1 className={styles.title}>{item.title}</h1>
