@@ -1,8 +1,8 @@
-import styles from './Info.module.css'
+import styles from './InfoTeam.module.css'
 import Image from 'next/image';
 import teamMain from '../../../../assets/img/teamMain.png'
 
-function Info() {
+function InfoTeam() {
     return (
         <div className={styles.wrapper}>
             <Image
@@ -22,4 +22,4 @@ function Info() {
     )
 }
 
-export default Info
+export default InfoTeam
