@@ -12,3 +12,10 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* .form_container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: url('../assets/img/form_dark.png') no-repeat right bottom,
+    url('../assets/img/form.png') no-repeat right bottom;
+} */

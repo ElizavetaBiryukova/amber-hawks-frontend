@@ -1,10 +1,11 @@
 import styles from './Form.module.css';
+import Image from 'next/image';
 
-export default function Form() {
+export default function Form({ img }) {
     return (
         <div className={styles.wrapper}>
             <h1 className={styles.title}>Записаться на тренировку</h1>
-            <div>
+            <div className={styles.formWrapper}>
                 <form className={styles.form} action="">
                     <input className={styles.input} placeholder='Как зовут?' type="text" />
                     <input className={styles.input} placeholder='Номер телефона для связи' type="text" />
@@ -16,6 +17,13 @@ export default function Form() {
 
                     <button className={styles.button} type="submit">Отправить заявку</button>
                 </form>
+                <Image
+                    width={600}
+                    height={500}
+                    src={img}
+                    alt='photo'
+                />
+
             </div>
 
         </div>

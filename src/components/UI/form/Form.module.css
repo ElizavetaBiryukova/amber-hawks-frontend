@@ -1,12 +1,15 @@
 .wrapper {
   color: var(--white);
-  margin-bottom: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: url('../../../assets/img/form_dark.png') no-repeat right bottom,
+    url('../../../assets/img/form.png') no-repeat right bottom;
 }
 
 .title {
   font-weight: 700;
   font-size: 2.5em;
-  margin: 40px 0 30px;
+  margin: 40px 0 115px;
   border-bottom: 3px solid var(--white);
   padding-bottom: 15px;
 }
@@ -46,4 +49,9 @@
 .button:hover {
   background-color: var(--dark-orange);
   transition: all 1s;
+}
+
+.formWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
