@@ -20,6 +20,7 @@
 }
 
 .header__text:hover {
+  color: var(--white);
   border-bottom: 4px solid var(--orange);
 }
 

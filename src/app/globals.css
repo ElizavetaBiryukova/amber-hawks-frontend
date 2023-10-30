@@ -31,11 +31,11 @@ a:visited {
   text-decoration: none;
 }
 
-/* a:hover {
+a:hover {
   text-decoration: none;
   color: var(--dark-orange);
   transition: color 1s;
-} */
+}
 
 a {
   color: var(--white);
