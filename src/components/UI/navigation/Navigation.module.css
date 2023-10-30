@@ -4,7 +4,7 @@
 
 .logo {
   content: '';
-  background: url(./../../../assets/img/logo.png);
+  background: url('./../../../assets/img/logo.png') no-repeat center;
   width: 80px;
   height: 76px;
 }
