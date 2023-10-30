@@ -1,7 +1,7 @@
 :root {
   --basic: #141414;
   --black: #000000;
-  --orange: #f77f52;
+  --orange: #ef7f1b;
   --white: #ffffff;
   --background: #313131;
   --dark-text: #222222;
@@ -31,11 +31,11 @@ a:visited {
   text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
   text-decoration: none;
   color: var(--dark-orange);
   transition: color 1s;
-}
+} */
 
 a {
   color: var(--white);
