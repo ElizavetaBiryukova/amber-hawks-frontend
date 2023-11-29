@@ -1,11 +1,11 @@
 import styles from './page.module.css'
-import Navigation from '@/components/UI/navigation/Navigation';
-import Footer from "@/components/UI/footer/Footer";
-import Form from '@/components/UI/form/Form';
-import NewsPage from '@/components/pages/News/NewsPage';
+import Navigation from '../../components/UI/navigation/Navigation';
+import Footer from "../../components/UI/footer/Footer";
+import Form from '../../components/UI/form/Form';
+import NewsPage from '../../components/pages/News/NewsPage';
 
 
-export default async function Flag() {
+export default async function News() {
     const imageForm = '/player_form.png'
     return (
         <>
