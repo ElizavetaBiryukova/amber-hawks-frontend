@@ -2,8 +2,6 @@
 
 import Link from 'next/link';
 import styles from './Navigation.module.css';
-import Vk from '../iconsComponents/Vk';
-import Youtube from '../iconsComponents/Youtube';
 import { usePathname } from 'next/navigation';
 
 
@@ -30,6 +28,10 @@ export default function Navigation() {
     {
       name: 'Флаг футбол',
       link: '/flag'
+    },
+    {
+      name: 'Женщины',
+      link: '/women'
     },
     {
       name: 'Дети',
