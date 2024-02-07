@@ -8,7 +8,7 @@ export default function NavigationMobile({ navLink, pathname }) {
         <div className={styles.menu}>
             <ul className={styles.menuList}>
                 {navLink.map(({ link, name }) => (
-                    <li key={name}>
+                    <li className={styles.menuItem} key={name}>
                         <Link className={`${styles.text} ${pathname == link ? styles.active : ''}`} href={link}>
                             {name}
                         </Link>
