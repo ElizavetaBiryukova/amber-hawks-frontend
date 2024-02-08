@@ -47,13 +47,13 @@ export default function Navigation() {
       <div className={styles.container}>
         <Link href='/' className={styles.logo}></Link>
         <div>
-          <div className={styles.header__burger}>
+          <div className={styles.header__burger} onClick={() => setOpen(true)}>
             <div className={styles.header__burgerItem}></div>
             <div className={styles.header__burgerItem}></div>
             <div className={styles.header__burgerItem}></div>
           </div>
           <nav className={styles.header__nav}>
-            <NavigationMobile navLink={navLink} pathname={pathname} />
+            {isOpen ? <NavigationMobile navLink={navLink} pathname={pathname} setOpen={setOpen} /> : ''}
             <ul className={styles.header__list}>
               {navLink.map(({ link, name }) => (
                 <li key={name}>
