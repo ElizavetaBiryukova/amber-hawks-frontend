@@ -23,8 +23,7 @@
     transform: translateX(0%);
     position: absolute;
     top: -40px;
-    right: 0px;
-    background: rgba(0, 0, 0, 0.4);
+    right: 1px;
   }
   .text {
     color: var(--white);
@@ -36,7 +35,7 @@
     align-items: center;
     gap: 20px;
     width: 100%;
-    background: url('../../../../assets/img/logo.png') no-repeat 50% 3%,
+    background: url('../../../../assets/img/logo.png') no-repeat 50% 5%,
       var(--orange);
     padding: 80px 10px;
   }

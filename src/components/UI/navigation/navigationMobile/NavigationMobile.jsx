@@ -1,11 +1,23 @@
 'use client'
 
+import { useSpring, animated } from '@react-spring/web';
 import Link from 'next/link';
 import styles from './NavigationMobile.module.css';
 
-export default function NavigationMobile({ navLink, pathname }) {
+export default function NavigationMobile({ navLink, pathname, setOpen }) {
+    const [props, api] = useSpring(
+        () => ({
+            from: { top: -520 },
+            to: { top: -40 },
+        }),
+        []
+    )
+
     return (
-        <div className={styles.menu}>
+        <animated.div
+            style={props}
+            className={styles.menu}
+            onClick={() => setOpen(false)}>
             <ul className={styles.menuList}>
                 {navLink.map(({ link, name }) => (
                     <li className={styles.menuItem} key={name}>
@@ -15,6 +27,6 @@ export default function NavigationMobile({ navLink, pathname }) {
                     </li>
                 ))}
             </ul>
-        </div>
+        </animated.div>
     )
 }
