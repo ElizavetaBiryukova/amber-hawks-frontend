@@ -6,7 +6,7 @@ import { getEvents } from '../../../../api/api';
 
 async function NewsList() {
     const events = await getEvents();
-    console.log(events)
+
     return (
         <div className={styles.wrapper}>
             <h2 className={styles.title}>Новости и события</h2>
