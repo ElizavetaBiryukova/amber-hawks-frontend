@@ -1,19 +1,21 @@
 import Link from 'next/link'
 import styles from './Documents.module.css'
+// import { getDocuments } from '../../../../api/api'
 
-function Documents() {
+async function Documents() {
+    // const documents = await getDocuments();
     const documents = [
         {
-            name: 'Правила',
-            link: ''
+            title: 'Правила',
+            file: '/test.pdf',
         },
         {
-            name: 'Устав федерации',
-            link: ''
+            title: 'Устав федерации',
+            file: '/test.pdf',
         },
         {
-            name: 'Регламент',
-            link: ''
+            title: 'Регламент',
+            file: '/test.pdf',
         },
     ]
     return (
@@ -22,15 +24,15 @@ function Documents() {
                 <h1 className={styles.title}>Документы</h1>
             </div>
             <ul className={styles.list}>
-                {documents.map(({ name }) => (
-                    <li className={styles.item} key={name}>
-                        <Link className={styles.link} href='!#'>
+                {documents.length ? documents.map((document) => (
+                    <li className={styles.item} key={document.title}>
+                        <Link className={styles.link} href={document.file} download>
                             <div className={styles.link_wrapper}>
-                                {name}
+                                {document.title}
                             </div>
                         </Link>
                     </li>
-                ))}
+                )) : <div className="none-info">Здесь пока нет документов</div>}
             </ul>
         </div>
     )
