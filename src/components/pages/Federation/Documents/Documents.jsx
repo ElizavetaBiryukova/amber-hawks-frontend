@@ -1,23 +1,23 @@
 import Link from 'next/link'
 import styles from './Documents.module.css'
-// import { getDocuments } from '../../../../api/api'
+import { getDocuments } from '../../../../api/api'
 
 async function Documents() {
-    // const documents = await getDocuments();
-    const documents = [
-        {
-            title: 'Правила',
-            file: '/test.pdf',
-        },
-        {
-            title: 'Устав федерации',
-            file: '/test.pdf',
-        },
-        {
-            title: 'Регламент',
-            file: '/test.pdf',
-        },
-    ]
+    const documents = await getDocuments();
+    // const documents = [
+    //     {
+    //         title: 'Правила',
+    //         file: '/test.pdf',
+    //     },
+    //     {
+    //         title: 'Устав федерации',
+    //         file: '/test.pdf',
+    //     },
+    //     {
+    //         title: 'Регламент',
+    //         file: '/test.pdf',
+    //     },
+    // ]
     return (
         <div className={styles.wrapper}>
             <div>
